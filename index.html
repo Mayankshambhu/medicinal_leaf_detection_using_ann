@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MEDICINAL PLANT IDENTIFIER</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+
+    <div>
+    <h1>Upload an image of a medicinal plant</h1>
+      <div class="form_con">
+    <form action="/identify" method="post" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <input type="submit" value="Identify Plant">
+    </form>
+        </div>
+      </div>
+  </body>
+</html>

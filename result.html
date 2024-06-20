@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Identification Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div>
+    <h1>Plant Identification Result</h1>
+    <p>Plant Name: {{ plant_name }}</p>
+    <p>English Name: {{ english_name }}</p>
+    <p>Botanical Name: {{ botanical_name }}</p>
+    <p>Uses: {{ uses }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + image_filename) }}" alt="Uploaded Image" style="width: 50%; height: 50%;">
+ </div>
+</body>
+</html>
